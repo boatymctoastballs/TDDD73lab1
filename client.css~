@@ -83,33 +83,3 @@ select{
   float: right;
   width: 160px;
 }
-
-
-/* Profile View */
-
-.header{
-  width: auto;
-  margin-left: 20%;
-  margin-right: 20%
-}
-
-.header ul{
-  list-style-type: none;
-}
-
-.header li{
-  width: 100px;
-  height: 30px;
-  margin-top: 30px;
-  background-color: #FEF1E0;
-  border: 1px solid black;
-  float: left;
-  text-align: center;
-  padding-top: 5px;
-  display: block;
-}
-
-.header li a{
-  text-decoration: none;
-  color: #634f6f;
-}

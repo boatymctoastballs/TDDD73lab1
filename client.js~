@@ -1,0 +1,33 @@
+	displayView = function(view){
+	   // the code required to display a view
+	   document.getElementById("clientView").innerHTML = view;
+	};
+
+
+
+
+
+
+
+window.onload = function(){
+   //code that is executed as the page is loaded.
+   //You shall put your own custom code here.
+   	const welcomeView = document.getElementById('welcomeView').innerHTML;
+   	const profileView = document.getElementById('profileView').innerHTML;
+
+   	let currentView = document.getElementById('clientView').innerHTML;
+
+   	var loginButton = document.getElementById('loginButton');
+   	var signupButton = document.getElementById('signupButton'); 
+
+
+	if(currentView == ""){
+		displayView(welcomeView);
+	}
+	/*else if(loginButton.onclick = function() || signupButton.onclick = function()) {
+		displayView(profileView.innerHTML);
+	}*/
+
+//window.alert() is not allowed to be used in your implementation.
+    window.alert("Hello TDDD97!");
+};
