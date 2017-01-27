@@ -81,33 +81,28 @@ validateSignin = function(){
   return check
 }
 
-headerfunc = function(header){
-  var headerHome = getElementById("headerHome").value;
-  var headerBrowse = getElementById("headerBrowse").value;
-  var headerAccount = getElementById("headerAccount").value;
+headerfunc = function(headerID){
+  var panelClicked = document.getElementById('headerID');
 
-  switch (header) {
-    case headerHome:
-      document.getElementById('headerHome').style.display = 'block'
-      document.getElementById('headerBrowse').style.display = 'none'
-      document.getElementById('headerAccount').style.display = 'none'
+  switch (headerID) {
+    case panelHome:
+      document.getElementById('panelHome').style.display = 'block'
+      document.getElementById('panelBrowse').style.display = 'none'
+      document.getElementById('panelAccount').style.display = 'none'
       return;
-    case headerBrowse:
-      document.getElementById('headerHome').style.display = 'none'
-      document.getElementById('headerBrowse').style.display = 'block'
-      document.getElementById('headerAccount').style.display = 'none'
+    case panelBrowse:
+      document.getElementById('panelHome').style.display = 'none'
+      document.getElementById('panelBrowse').style.display = 'block'
+      document.getElementById('panelAccount').style.display = 'none'
       return;
-    case headerAccount:
-      document.getElementById('headerHome').style.display = 'none'
-      document.getElementById('headerBrowse').style.display = 'none'
-      document.getElementById('headerAccount').style.display = 'block'
+    case panelAccount:
+      document.getElementById('panelHome').style.display = 'none'
+      document.getElementById('panelBrowse').style.display = 'none'
+      document.getElementById('panelAccount').style.display = 'block'
       return;
     default:
-    document.getElementById('headerHome').style.display = 'none'
-    document.getElementById('headerBrowse').style.display = 'none'
-    document.getElementById('headerAccount').style.display = 'none'
+    document.getElementById('panelHome').style.display = 'none'
+    document.getElementById('panelBrowse').style.display = 'none'
+    document.getElementById('panelAccount').style.display = 'none'
   }
-  document.getElementById('id1').style.color =
-  document.getElementById('id1').style.color = 'red'
-  document.getElementById('id1').style.color = 'red'
 }

@@ -3,11 +3,25 @@
       <script type=”text/view” id="profileview">
       <div class="header">
         <ul>
-          <li class="menuItem" id="headerHome"><a href=#"home" onclick="headerfunc(headerHome);">Home</a></li>
-          <li class="menuItem" id="headerBrowse"><a href=#"browse" onclick="headerfunc(headerBrowse);">Browse</a></li>
-          <li class="menuItem" id="headerAccount"><a href=#"account" onclick="headerfunc(headerAccount);">Account</a></li>
+          <li class="menuItem" id="headerHome"><a href=#"home" onclick="headerfunc(panelHome);">Home</a></li>
+          <li class="menuItem" id="headerBrowse"><a href=#"browse" onclick="headerfunc(panelBrowse);">Browse</a></li>
+          <li class="menuItem" id="headerAccount"><a href=#"account" onclick="headerfunc(panelAccount);">Account</a></li>
         </ul>
       </div>
+      <div id="fullPanel">
+      <div class="panel" id="panelHome">
+        <p>homePanel</p>
+      </div>
+
+      <div class="panel" id="panelBrowse">
+        <p>browsePanel</p>
+      </div>
+
+      <div class="panel" id="panelAccount">
+        <p>accountPanel</p>
+      </div>
+      </div>
+
       </script>
 
       <script type=”text/view” id="welcomeview">

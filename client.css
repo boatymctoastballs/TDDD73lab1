@@ -1,7 +1,7 @@
-/*html{
+*{
   margin: 0;
   padding: 0;
-}*/
+}
 
 body{
   background-color: #a18eb7;
@@ -68,7 +68,7 @@ height: 25px;
 }
 
 h3{
-  height: 14px;
+  height: 30px;
   text-align: center;
 }
 #login{
@@ -88,28 +88,62 @@ select{
 /* Profile View */
 
 .header{
-  width: auto;
-  margin-left: 20%;
-  margin-right: 20%
+  display: block;
+  width: 100%;
+  overflow: auto;
 }
 
 .header ul{
   list-style-type: none;
+  overflow: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  width: 306px;
 }
 
 .header li{
-  width: 100px;
-  height: 30px;
-  margin-top: 30px;
-  background-color: #FEF1E0;
-  border: 1px solid black;
+  /*Text position*/
   float: left;
   text-align: center;
-  padding-top: 5px;
   display: block;
+
+  /*Dimention*/
+  width: 100px;
+  height: 30px;
+  padding-top: 5px;
+
+  /*Color*/
+  border: 1px solid black;
+  background-color: #FEF1E0;
 }
 
 .header li a{
   text-decoration: none;
   color: #634f6f;
+}
+
+/*Panels */
+
+#fullPanel{
+  display: block;
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel{
+
+  width: 800px;
+  height: 87%;
+
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  display: none; /*Assigning value property in script*/
+  background-color: whitesmoke;
+}
+
+#panelHome{
 }
